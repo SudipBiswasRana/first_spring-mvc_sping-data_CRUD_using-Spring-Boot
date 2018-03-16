@@ -1,0 +1,13 @@
+create database jpadb
+
+use jpadb
+
+create table donortable
+(
+   id int(5) not null auto_increment primary key, 
+   first_name char(20) ,
+   last_name char(20) ,
+   phone_no char(10) ,
+   blood char (10)
+   )
+select * from  donortable

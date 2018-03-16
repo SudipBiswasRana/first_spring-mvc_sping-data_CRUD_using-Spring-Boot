@@ -1,0 +1,19 @@
+
+1. http://localhost:8080/donor/save/
+
+  Sorry For Inconvenience , Please Try Again Later .. { Error Handling Working }
+
+2018-03-10 04:10:53.783  INFO 11420 --- [io-8080-exec-10] o.h.h.i.QueryTranslatorFactoryInitiator  : 
+HHH000397: Using ASTQueryTranslatorFactory
+
+Hibernate: select donor0_.id as id1_0_, donor0_.blood as blood2_0_, donor0_.first_name as first_na3_0_, 
+donor0_.last_name as last_nam4_0_, donor0_.phone_no as phone_no5_0_ from donortable donor0_ where donor0_.first_name=?
+
+--------------------------------------------------------------------------------------------------------------------
+2. http://localhost:8080/donor/one/
+
+2018-03-10 04:17:20.805 ERROR 11972 --- [nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    :
+ Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Neither BindingResult nor plain target object for bean name 'command' available as request attribute] with root cause
+
+java.lang.IllegalStateException: 
+Neither BindingResult nor plain target object for bean name 'command' available as request attribute
